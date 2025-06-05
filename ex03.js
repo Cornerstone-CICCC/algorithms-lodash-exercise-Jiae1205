@@ -4,6 +4,10 @@ const _ = require('lodash');
 
 const numbers = [1, 3, 5, 7, 9];
 
-// your code here
+function firstGreaterThanFive(arr) {
+    const number = _.find(arr, num=>num>5)
 
-console.log(firstGreaterThanFive); // Expected output: 7
+    return number
+}
+
+console.log(firstGreaterThanFive(numbers)); // Expected output: 7
